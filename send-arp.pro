@@ -1,17 +1,18 @@
 TEMPLATE = app
-CONFIG += console
+CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
+LIBS += -lpcap
 
 SOURCES += \
         arphdr.cpp \
         ethhdr.cpp \
         ip.cpp \
         mac.cpp \
-        main.c
+        main.cpp
 
 HEADERS += \
-    arphdr.h \
-    ethhdr.h \
-    ip.h \
-    mac.h
+        arphdr.h \
+        ethhdr.h \
+        ip.h \
+        mac.h
